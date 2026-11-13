@@ -1,0 +1,9 @@
+# Copy to terraform.tfvars (git-ignored; OpenTofu loads it automatically) and fill in.
+project_id = "my-project-id"
+
+# Your IPv6 /64 prefix: the first four groups of `curl -6 ifconfig.co` (run it
+# where you have IPv6), then ::/64.
+ssh_allowed_cidr_ipv6 = "2001:db8:1234:5678::/64"
+
+# Optional: otherwise read from the project.
+# billing_account_id = "0X0X0X-0X0X0X-0X0X0X"

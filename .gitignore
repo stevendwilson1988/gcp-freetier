@@ -9,3 +9,10 @@ id_*
 *credentials*.json
 service-account*.json
 sa-*.json
+
+# OpenTofu: state holds instance details and IPs; tfvars hold project and your IP prefix
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
