@@ -1,0 +1,11 @@
+# Never commit GCP credentials or keys
+*.pem
+*.key
+*.p12
+id_*
+.env
+# Service account key files (prefer `gcloud auth login` / ADC over key files)
+*-key.json
+*credentials*.json
+service-account*.json
+sa-*.json
